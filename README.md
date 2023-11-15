@@ -38,12 +38,11 @@ A command interpreter to manage our Airbnb clone objects:
  - Access AirBnb directory: `cd AirBnB_clone`
  - Run hbnb(interactively): `./console` and enter command
  - Run hbnb(non-interactively): `echo "<command>" | ./console.py`
- 
+
 ## File description :file_folder: 
 
 ```
 AUTHORS     /models    test_base_model_dict.py    test_base_model.py    README.md    test_save_reload_base_model.py  
-
 ```
 
 ## Example :computer:
@@ -52,6 +51,3 @@ AUTHORS     /models    test_base_model_dict.py    test_base_model.py    README.m
 <img src = "https://i.imgur.com/c5lYRnU.png"/>
 <img src = "https://i.imgur.com/9oWdkPQ.png"/>
 </p>
-
- 
-
