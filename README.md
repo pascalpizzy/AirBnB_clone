@@ -1,25 +1,29 @@
 PROJECT: 0x00. AirBnB clone - The console
 
-TASKs: 
-
-
-# AirBnB clone - The console :ab::rocket:
-The AirBnB clone project starts now until… the end of the first year. The goal of the project is to deploy on your server a simple copy of the AirBnB website. 
-
+Background Context
 
 ## Table of contents :clipboard:
 
- - [Description](https://github.com/marktos247/AirBnB_clone.git/#description-triangular_ruler)
- - [Installation](https://github.com/marktos247/AirBnB_clone.git/#installation-floppy_disk)
- - [File description](https://github.com/marktos247/AirBnB_clone.git/blob/master/README.md#file-description-file_folder)
- - [Example](https://github.com/marktos247/AirBnB_clone.git#example-computer)
- - [Contributors](https://github.com/marktos247/AirBnB_clone.git#contributors)
+ - [Description]
+ - [Installation]
+ - [File description]
+ - [Example]
+ - [Contributors]
 
-## Description :triangular_ruler:
+## Description 
+Firstly: To write a command interpreter that manages the AirBnB Objects
 
-The console is the first segment of the `AirBnB project` at `Holberton School` that will collectively cover fundamental concepts of higher level programming. The goal of `AirBnB project` is to eventually deploy our server a simple copy of the `AirBnB Website(HBnB)`. A command interpreter is created in this segment to manage objects for the `AirBnB(HBnB) website.`
+This is the first step towards building our first full web application: the AirBnB clone. This first step is very important because we will use what we build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration.
 
-This is the first step towards building our first full web application: the AirBnB clone.
+Each task is linked and will help to:
+
+ - Put in place a parent class (called BaseModel) to take care of the initialization, serialization and deserialization of your future instances
+ - Create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
+ - Create all classes used for AirBnB (User, State, City, Place…) that inherit from BaseModel
+ - Create the first abstracted storage engine of the project: File storage.
+ - Create all unittests to validate all our classes and storage engine
+
+What’s a command interpreter?
 
 A command interpreter to manage our Airbnb clone objects:
 
@@ -29,9 +33,6 @@ A command interpreter to manage our Airbnb clone objects:
 - Update attributes of an object
 - Destroy an object
 
-<p align="center">
-<img src = "https://i.imgur.com/ROvfVRP.png"/>
- </p>
 
 ## Installation :floppy_disk:
  - Clone this repository: `git clone "https://github.com/marktos247/AirBnB_clone.git"`
@@ -39,15 +40,53 @@ A command interpreter to manage our Airbnb clone objects:
  - Run hbnb(interactively): `./console` and enter command
  - Run hbnb(non-interactively): `echo "<command>" | ./console.py`
 
+Execution
+Your shell should work like this in interactive mode:
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+
+But also in non-interactive mode: (like the Shell project in C)
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+All tests should also pass in non-interactive mode: $ echo "python3 -m unittest discover tests" | bash
+
+
+
 ## File description :file_folder: 
 
 ```
 AUTHORS     /models    test_base_model_dict.py    test_base_model.py    README.md    test_save_reload_base_model.py  
 ```
 
-## Example :computer:
+## Example : computer:
 
-<p align="center"> 
-<img src = "https://i.imgur.com/c5lYRnU.png"/>
-<img src = "https://i.imgur.com/9oWdkPQ.png"/>
-</p>
+## Contributors:
+```
+Mark Ajakaiye - aj.marktos@yahoo.com
+Pascal Ikechukwu - pascalikechukwu@gmail.com
+```
